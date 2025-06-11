@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Data from '../components/Data.astro';
+import Learning from '../components/Learning.astro';
+import AboutUs from '../components/AboutUs.astro';
+import Calendly from '../components/Calendly.astro';
+import Footer from '../components/Footer.astro';
+import Beehiiv from '../components/Beehiiv.astro';
+
+---
+
+<Layout title="ASTRA">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="icon" type="image/svg+xml" href="/public/logo.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<main class="text-white font-poppins m-auto ">
+		<div class="max-w-7xl m-auto">
+			<div class="  lg:px-6">
+				<Navbar/>
+			</div>
+			<div class="lg:max-w-6xl m-auto">
+				<div class="mt-12 mx-5 md:mt-8 md:mx-12 xl:mx-10 xl:mt-14">
+					<Hero>
+				</div>
+				<div class=" mt-16 mb-8 mx-6 flex flex-col gap-24">
+					<Data/>
+					<Learning/>
+					<Calendly/>
+				</div>
+			</div>
+		</div>
+		<footer class="w-full">
+			<Footer/>
+		</footer>
+	</main>
+</Layout>
+
+
+
+
+

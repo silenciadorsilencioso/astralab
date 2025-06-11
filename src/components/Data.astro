@@ -1,0 +1,37 @@
+---
+
+const dataItems = [
+    { title: 'ANALISIS', description: 'Estadistico' },
+    { title: 'VISTA', description: 'Plantilla predefinida' },
+    { title: 'SISTEMA', description: 'Validado y Efectivo' },
+    { title: 'COACH', description: '1:1 Privado' }
+];
+
+
+---
+
+<div class="flex flex-col text-xl border-2 rounded-xl border-violet-800 text-center md:flex-row">
+    {dataItems.map((item, index) => (
+        <div id={`item-${index}`} class=" py-3 px-24 border-b border-violet-900 md:px-5 py-10 md:border-r xl:p-10">
+            <h3 class="animatable title text-3xl font-bold text-violet-500 md:text-4xl xl:text-5xl ">{item.title}</h3>
+            <p class="animatable">{item.description}</p>
+        </div>
+    ))}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-slideUp');
+            } else {
+                entry.target.classList.remove('animate-slideUp');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const items = document.querySelectorAll('.animatable');
+    items.forEach(item => observer.observe(item));
+});
+</script>

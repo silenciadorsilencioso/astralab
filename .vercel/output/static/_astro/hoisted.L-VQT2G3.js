@@ -1,0 +1,1 @@
+import"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js";document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("expandableImage");document.getElementById("expandableContainer").addEventListener("click",()=>{e.classList.contains("expanded")?e.classList.remove("expanded"):e.classList.add("expanded")})});

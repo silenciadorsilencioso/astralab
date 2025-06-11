@@ -1,0 +1,88 @@
+<div class=" flex flex-col gap-5 xl:gap-10 ">
+    <div class="">
+        <h2 class=" text-4xl text-center font-medium  md:text-5xl ">Explora el poder del <span class="custom-text-gradient">ANALISIS</span></h2>
+    </div>
+    <div class="">
+        <p class="text-center text-lg text-slate-300 md:text-xl lg:px-28 xl:px-48 ">Maximiza las percepciones tuyas y de tus clientes con nuestras herramientas</p>
+    </div>
+    <div class=" p-3 flex justify-center gap-2 bg-violet-950 rounded-xl transition-colors duration-300 ease-in-out hover:bg-violet-600 hover:text-violet-200 md:m-auto md:w-2/3 lg:w-1/2 xl:w-2/5  ">
+        <img class="w-8 md:w-8" src="/images/discord.webp" alt="">
+        <button class="">
+            <a class="md:text-xl" href="https://discord.gg/Avp96xB3qW" target="_blank" >Comunidad ASTRA</a>
+        </button>
+    </div>
+   
+        <div>
+            <iframe class="m-auto rounded-xl resolution-video h-72 border-2 border-violet-800 md:h-96 md:w-5/6 lg:w-2/3 video-container "src="https://www.youtube.com/embed/-VGQxQHLXEI" title="‎" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    
+    
+    <div class=" p-3 flex justify-center gap-2 bg-violet-950 rounded-xl transition-colors duration-300 ease-in-out hover:bg-violet-600 hover:text-violet-200 md:m-auto md:w-2/3 lg:w-1/2 xl:w-2/5">
+        <img class="w-8 md:w-8" src="/images/calendario.webp" alt="">
+        <button class="">
+            <a class="md:text-xl" href="#calendly">Reserva una llamada</a>
+        </button>
+    </div>
+</div>
+
+<style>
+    @keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* VIDEO
+<div>
+        <iframe class="m-auto rounded-xl resolution-video h-72 border-2 border-violet-800 md:h-96 md:w-5/6 lg:w-2/3 video-container "src="https://www.youtube-nocookie.com/embed/FG4Na0vBZPk" title="‎" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>*/ 
+@keyframes opactity {
+    from {
+        opacity : 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.resolution-video{
+    width: 100%;
+}
+
+.glow-effect {
+    text-shadow: 0px 0px 5px #cfb629, /* Primera capa de brillo */
+                 0px 0px 10px #cfb629, /* Segunda capa de brillo */
+                 0px 0px 0px #cfb629; /* Tercera capa de brillo para un brillo más intenso */}
+
+                 
+@media (min-width: 1280px) { /* breakpoint xl en Tailwind */
+    .resolution-video {
+        width: 60%;
+    }
+}
+
+.video-container:hover {
+    box-shadow: 0px 0px 50px -12px rgba(255, 255, 255, 0.5);
+    transition: 1s;
+}
+
+.custom-text-gradient {
+    background: radial-gradient(at 61.681808839936906% 18.713453047060867%, hsla(236.76923076923077, 84.4155844155844%, 69.80392156862744%, 1) 0%, hsla(236.76923076923077, 84.4155844155844%, 69.80392156862744%, 0) 100%),
+                radial-gradient(at 8.792883057247769% 10.531053903989228%, hsla(308.7692307692308, 84.4155844155844%, 69.80392156862744%, 1) 0%, hsla(308.7692307692308, 84.4155844155844%, 69.80392156862744%, 0) 100%),
+                radial-gradient(at 92.39499859343967% 89.18327529767484%, hsla(21.230769230769234, 84.4155844155844%, 69.80392156862744%, 1) 0%, hsla(21.230769230769234, 84.4155844155844%, 69.80392156862744%, 0) 100%),
+                radial-gradient(at 76.09054593785065% 38.92786969520729%, hsla(165.23076923076923, 84.4155844155844%, 69.80392156862744%, 1) 0%, hsla(165.23076923076923, 84.4155844155844%, 69.80392156862744%, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+</style>
